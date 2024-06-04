@@ -3,6 +3,8 @@ package pageObject;
 public interface LogTicket_Element {
     //String pushbtn = "//button[text()='Send Me a Push ']";
     String ticketNumber = "//*[@id='QV_GRID']/tbody/tr[1]/td[2]";
+    String logo = "//span[@id='logo']";
+    String Hours = "//div[@id='QV_List_Items']/ul[1]/li[10]";
     String logtkbtn = "//li[@id='ticketlogger_menulink']";
     
     //Gerenal tab

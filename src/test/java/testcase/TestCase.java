@@ -19,7 +19,7 @@ public class TestCase extends BaseTest {
         log.LoginWorkflow();
     }
 
-    @Test (enabled = false)
+    @Test (priority = 1)
     public void LogTicketWorkflow() throws Exception {
         LogTicket log1 = new LogTicket(driver);
         log1.logticketWorkflow();
@@ -31,19 +31,19 @@ public class TestCase extends BaseTest {
         log2.ClientInfo();
     }
     
-    @Test (priority = 1)
+    @Test (priority = 2)
     public void Queueview_Specify_Associate_ID_tWorkflow() throws Exception {
     	Queueview_Specify_Associate_ID Queueview = new Queueview_Specify_Associate_ID(driver);
     	Queueview.Queueview_Specify_Associate_ID_tWorkflow();
     }
     
-    @Test (priority = 2)
+    @Test (priority = 3)
     public void Queueview_Specify_Manager_Workflow() throws Exception {
     	Queueview_Specify_Manager QueueviewManager = new Queueview_Specify_Manager(driver);
     	QueueviewManager.Queueview_Specify_Manager_Workflow();
     }
     
-    @Test (priority = 3)
+    @Test (priority = 4)
     public void Queueview_Specify_Queue_Workflow() throws Exception {
     	Specify_Queue SpecifyQueue = new Specify_Queue(driver);
     	SpecifyQueue.Queueview_Specify_Queue_Workflow();

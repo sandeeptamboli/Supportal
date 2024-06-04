@@ -1,9 +1,15 @@
 package pageEvent;
 
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.ElementFetch;
 import utils.SuitListener;
@@ -251,7 +257,7 @@ public class LogTicket extends LogTicket_Locator {
 		elementFetch.getWebElement("XPATH", LogTicket_Element.ClassificationOption).click();
 		Thread.sleep(1000);
 		elementFetch.getWebElement("XPATH", LogTicket_Element.CreateINC).click();
-		waitUtils.waitForVisibilityOfElement(Age);
+//		waitUtils.waitForVisibilityOfElement(ticketNumber);
 		Thread.sleep(1000);
 	}
 }

@@ -7,6 +7,12 @@ public class LogTicket_Locator {
 	@FindBy(xpath = "//*[@id='QV_GRID']/tbody/tr[1]/td[2]")
 	public WebElement ticketNumber;
 	
+	@FindBy(xpath = "//span[@id='logo']")
+	public WebElement logo;
+	
+	@FindBy(xpath = "//div[@id='QV_List_Items']/ul[1]/li[10]")
+	public WebElement Hours;
+	
 	@FindBy(xpath = "//li[@id='ticketlogger_menulink']")
 	public WebElement logtkbtn;
 	
